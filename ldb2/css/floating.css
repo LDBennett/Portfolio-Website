@@ -1,0 +1,85 @@
+/*
+floating element for clouds
+*/
+
+.floating.f0{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+.floating.f1{
+	animation-name: floating1;
+	-webkit-animation-name: floating1;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+.floating.f2{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.floating.f3{
+	animation-name: floating1;
+	-webkit-animation-name: floating1;
+	animation-duration: 3.5s;	
+	-webkit-animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating{
+	0% {
+		transform: translate(0%,1%);
+	}
+	50% {
+		transform: translate(2%,0%);
+	}	
+	100% {
+		transform: translate(0%,1%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translate(0%,3%);	
+	}
+	50% {
+		-webkit-transform: translate(2%,0%);
+	}	
+	100% {
+		-webkit-transform: translate(0%,3%);
+	}			
+}
+
+@keyframes floating1{
+	0% {
+		transform: translate(0%,2%);
+	}
+	50% {
+		transform: translate(1%,0%);
+	}	
+	100% {
+		transform: translate(0%,2%);
+	}			
+}
+
+@-webkit-keyframes floating1 {
+	0% {
+		-webkit-transform: translate(0%,2%);	
+	}
+	50% {
+		-webkit-transform: translate(1%,0%);
+	}	
+	100% {
+		-webkit-transform: translate(0%,2%);
+	}			
+}

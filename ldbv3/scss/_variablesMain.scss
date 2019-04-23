@@ -1,0 +1,29 @@
+$triBlue: #006beb;
+$tb-comp: complement($triBlue);
+
+$triBlue-Light: #74C4E2;
+$tbLight-comp: complement($triBlue-Light);
+
+$triBlue-Dark: #003D85;
+$tbDark-comp: complement($triBlue-Dark);
+
+$triBlue-Light2: #8ed1ec;
+$triLight2-comp: complement($triBlue-Light2);
+
+.triBlue{
+	background-color: $triBlue !important;
+	color: $triBlue !important;
+} 
+.triBlue-btn{
+	background-color: $triBlue !important;
+	color: white !important;
+	font-weight: 700;
+} 
+.triBlue-Light{
+	background-color: $triBlue-Light !important;
+	color: $triBlue-Light !important;
+}
+.triBlue-Light2{
+	background-color: $triBlue-Light2 !important;
+	color: black !important;
+}

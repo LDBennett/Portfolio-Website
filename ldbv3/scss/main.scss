@@ -1,0 +1,191 @@
+// Variables;
+@import "_variablesMain";
+@import "ext/ext";
+
+//Functions
+@function randomLeft() {  
+ @return random(3)+em;  
+}
+
+.hidden{
+	visibility: hidden;	
+}
+
+//Main Component SCSS
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background: $triBlue;
+	font-family: Raleway, Arial, sans-serif;
+}
+
+h2{
+	font-weight: 900;
+}
+	
+main {
+	flex: 1 0 auto;
+}
+
+header{
+	background:url('../img/pattern.png') no-repeat top left, url('../img/pattern2.png') no-repeat top right;
+	height: 100vh;
+}
+
+@media screen and (min-width:600px){
+	header h4{
+		color: white;
+		opacity: .5;
+		
+		&:hover{
+			font-size:3.5em;
+			padding-left: 0em !important;
+			font-weight: bold;
+			opacity: 1;
+			color: white;
+			text-shadow: 2px 2px $triBlue-Dark;
+		}
+		
+		span{
+			position: absolute;
+			&:hover{
+				color: $triBlue-Light;
+			}
+		}		
+	}
+}
+
+//Left Lee Bennett Logo
+@media screen and (min-width: 400px){
+	img#logo{
+		max-width: 50%; 
+		min-width: 300px;
+	}
+}
+
+//Side Navigation Styles
+#nav #slide-out{
+	background: $triBlue-Light;
+	color: white;
+	#closeNav{
+		color: $triBlue-Dark;
+		&:hover{
+			color: white;
+			cursor: pointer;
+		}
+	}
+	.waves-effect{
+		font-weight: bolder;
+		font-size: 1.5em;
+	}
+	.subheader{
+		z-index: -99;
+		opacity: .1;
+		color: $triBlue-Dark;
+		margin-top: -4em;
+	}
+}
+
+#navButtonContainer{
+	top: 10%; 
+	left: .5em; 
+	position: fixed; 
+	z-index: 99;
+	color: $triBlue-Dark;
+	
+	@media screen and (min-width:400px){
+		top: 50%;	
+		left: 2em; 
+	}
+}
+
+//Sections
+section#about, section#skills{
+	background: white !important;
+	.container{
+		padding: 2em;
+	}
+}
+
+section#portfolio{
+	.activator{
+		
+		&:hover{
+		cursor: pointer;
+		}
+	}
+
+	span.card-title,
+	.card-reveal .card-title, i{
+		color: $triBlue-Light !important;
+	}
+	p, h2, .chip{
+		color: white;
+	}
+	.card{
+		background-color: $triBlue-Dark;
+	}
+	.card-reveal{
+		background-color: $triBlue;
+	}
+	.chip{
+		background-color: $tb-comp !important;
+		font-weight: bold;
+	}
+	.fadeout {
+    position: relative; 
+		bottom: 8em;
+    height: 8em;
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,61,133,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,61,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,61,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#003d85',GradientType=0 ); /* IE6-9 */
+	}
+	.card-action{
+		background: rgba(255, 255, 255, .05);
+		
+		span{
+		color: $triBlue-Light;
+		font-size: 1.3em;
+		}
+	}
+}
+
+//Skills Sections
+#skills{
+	svg{
+		color: $triBlue-Dark;
+	}
+	h3,h2{
+		font-weight: 700;
+		color: $triBlue-Dark;
+	}
+	p{
+		font-weight: 300;
+	}
+	.fa-lightbulb{
+		animation-duration: 10s;
+		animation-delay: 10s;
+		animation-iteration-count: infinite;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-delay: 10s;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-duration: 10s;
+		-moz-animation-delay: 10s;
+		-moz-animation-iteration-count: infinite;
+		-ms-animation-duration: 10s;
+		-ms-animation-delay: 10s;
+		-ms-animation-iteration-count: infinite;
+	}
+
+}
+
+#collabFooter a{
+	color: $triBlue !important;
+}
+
+//Footer
+.page-footer{
+	background: #74C4E2 url('../img/pattern_footer.png') no-repeat center;
+}

@@ -1,0 +1,50 @@
+/*
+CSS file for Lee Bennett Portfolio
+Made by: Lee Bennett
+*/
+
+/*Body for custom font and the gradient background
+Also, this breaks up long words with the word-wrap and 
+overflow-wrap*/
+body{
+	font-family: 'Raleway', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: #006beb; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#006beb, #74C4E2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#006beb, #74C4E2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#006beb, #74C4E2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#006beb, #74C4E2); /* Standard syntax (must be last) */ 
+  word-wrap: break-word;
+  overflow-wrap: break-word;    
+}
+
+/*Header Content Customizations*/
+.header-content{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.modal-body-inner{
+  font-size: 1.25em;
+  margin: 1em;
+}
+.btn-primary{
+  color:white;
+}
+.modal-hr{
+  width: 70%;
+  height: .5em;
+  background-color: #8ed1ec;
+  border: 0 none;
+  margin: 2em auto;
+}
+
+/*Bottom Nav*/
+#bottomNav{
+    margin:0px;
+    padding:0px;
+}

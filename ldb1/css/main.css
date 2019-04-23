@@ -1,0 +1,75 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.img-center {
+    margin: 0 auto;
+}
+
+h1{
+    color: black;
+}
+
+p{
+    color:black;
+}
+
+.section-divider {
+    background-color: black;
+    z-index: 999;
+    width: 100%;
+    display: table;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 5px;
+    color: white;
+
+
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+    
+    text-align: center;
+}
+
+.section-divider > h4{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.div-gal {
+    background-image: url('../img/ban/gal.png');
+    background-color:black;
+    width: 100%;
+}
+.div-port {
+    background-image: url('../img/ban/port.png');
+    background-color:black;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
